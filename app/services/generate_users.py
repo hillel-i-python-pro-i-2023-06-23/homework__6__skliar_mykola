@@ -1,5 +1,6 @@
 from faker import Faker
 
+
 def generate(num_users=100):
     users = []
 

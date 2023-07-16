@@ -11,9 +11,9 @@ repos:
     rev: 22.10.0
     hooks:
     -   id: black
- 
-- repo: local
 
+- repo: local
+  
   hooks:
     - id: black
       name: black

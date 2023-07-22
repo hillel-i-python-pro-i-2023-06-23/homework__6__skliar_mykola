@@ -24,4 +24,4 @@ def parameter_averaging(file_path):
         md_he_cm = round(md_he_inc * 2.54, 2)
         md_we_pound = summ_weight / float(index)
         md_we_kg = round(md_we_pound / 2.205, 2)
-        return md_he_cm, md_we_kg
+        return {"height": md_he_cm, "weight": md_we_kg}

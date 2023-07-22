@@ -19,4 +19,7 @@ def main():
     print(who_is_here.parsing(link_3))
     print("------4------")
     link_4 = os.path.join(current_dir, "../files_input/people_data(extended).csv")
-    print(f"height {midle.midle_w(link_4)[0]} weight {midle.midle_w(link_4)[1]}")
+    print(
+        f"height {midle.parameter_averaging(link_4)[0]} "
+        f"weight {midle.parameter_averaging(link_4)[1]}"
+    )

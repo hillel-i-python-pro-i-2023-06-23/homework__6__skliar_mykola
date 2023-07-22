@@ -23,6 +23,3 @@ def midle_w(file_path):
         md_he = summ_height / float(index)
         md_we = summ_weight / float(index)
         return md_he, md_we
-
-
-# noqa

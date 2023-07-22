@@ -5,7 +5,7 @@ from app.services import midle
 import os
 
 
-def run():
+def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     print("------1------")
     link_1 = os.path.join(current_dir, "../files_input/data_input.txt")
@@ -20,7 +20,3 @@ def run():
     print("------4------")
     link_4 = os.path.join(current_dir, "../files_input/people_data(extended).csv")
     print(f"height {midle.midle_w(link_4)[0]} weight {midle.midle_w(link_4)[1]}")
-
-
-if __name__ == "__main__":
-    run()

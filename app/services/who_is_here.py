@@ -2,6 +2,7 @@ import requests
 
 
 def parsing(link):
+    num_astronauts = 0
     try:
         r = requests.get(link, auth=("user", "pass"))
         num_astronauts = len(r.json()["people"])

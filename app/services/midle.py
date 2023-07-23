@@ -2,7 +2,7 @@
 import csv
 
 
-def midle_w(file_path):
+def parameter_averaging(file_path):
     summ_height = 0
     summ_weight = 0
     with open(file_path, newline="") as file:
@@ -20,9 +20,8 @@ def midle_w(file_path):
             summ_height += height
             summ_weight += weight
 
-        md_he = summ_height / float(index)
-        md_we = summ_weight / float(index)
-        return md_he, md_we
-
-
-# noqa
+        md_he_inc = summ_height / float(index)
+        md_he_cm = round(md_he_inc * 2.54, 2)
+        md_we_pound = summ_weight / float(index)
+        md_we_kg = round(md_we_pound / 2.205, 2)
+        return {"height": md_he_cm, "weight": md_we_kg}
